@@ -1,0 +1,18 @@
+import = [
+    "~/.config/alacritty/themes/themes/everforest_dark.toml"
+]
+
+[window]
+padding = { x = 5, y = 5 }
+opacity = 0.6
+
+[scrolling]
+history = 5000
+multiplier = 3
+
+[font]
+normal = { family = "Comic Code", style = "Regular" }
+bold = { style = "Regular" }
+italic = { style = "Italic" }
+bold_italic = { style = "Bold Italic" }
+size = 13 

@@ -1,0 +1,11 @@
+preload = ~/.config/hypr/assets/wallpaper.jpg 
+
+#set the default wallpaper(s) seen on initial workspace(s) --depending on the number of monitors used
+wallpaper = HDMI-A-2,~/.config/hypr/assets/wallpaper.jpg
+wallpaper = DPI-2,~/.config/hypr/assets/wallpaper.jpg
+
+#enable splash text rendering over the wallpaper
+splash = true
+
+#fully disable ipc
+# ipc = off

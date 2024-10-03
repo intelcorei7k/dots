@@ -1,0 +1,46 @@
+//
+// ██╗    ██╗ █████╗ ██╗   ██╗██████╗  █████╗ ██████╗ 
+// ██║    ██║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+// ██║ █╗ ██║███████║ ╚████╔╝ ██████╔╝███████║██████╔╝
+// ██║███╗██║██╔══██║  ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+// ╚███╔███╔╝██║  ██║   ██║   ██████╔╝██║  ██║██║  ██║
+//  ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+//
+// Waybar Config File by Shumiya
+
+{
+    "layer": "top",
+    "height": 28,
+
+    "include": ["$HOME/.config/waybar/modules.json"],
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "group/system", "group/keyboard", "group/hardware", "custom/wlogout"],
+
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "network"
+        ]
+    },
+
+    "group/keyboard": {
+        "orientation": "horizontal",
+        "modules": [
+            "hyprland/language",
+            "keyboard-state"
+        ]
+    },
+
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "disk",
+            "cpu",
+            "memory"
+        ]
+    }
+}
+
